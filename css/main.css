@@ -1,0 +1,618 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+:root{
+    --text-color:#fff;
+    --background-color-body:#000;
+}
+
+
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: var(--text-color) 1px dashed;
+    outline-offset: 5px;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-body);
+    font-family:'Poppins', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--text-color);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* CONTAINER SYTLES */
+.container {
+    width: 100%;
+    max-width: 1480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* SITE HEADER STYLES */
+.header-container{
+    display: flex;
+    padding:30px 160px 30px 152px;
+    align-items: center;
+
+}
+.site-header-logo {
+    margin-right: auto;
+}
+.site-header-logo-img {
+    display: flex;
+    width: 128px;
+    height: 31px;
+    object-fit: contain;
+}
+.site-header-logo-img:hover{
+    opacity: 0.8;
+}
+.site-header-logo-img:active{
+    opacity: 0.6;
+}
+.site-header-nav-list {
+    display: flex;
+    list-style: none;
+
+}    
+.site-header-nav-list-item{
+    margin-right: 32px;
+}
+.site-header-nav-list-item:first-child{
+    margin-right: 56px;
+}
+
+.site-header-nav-list-item:last-child{
+    margin-right: 32px;
+}
+.site-header-nav-item-link{
+    font-size: 15px;
+    line-height: 20px;
+    color:var(--text-color);
+    text-decoration: none;
+
+}
+.site-header-nav-item-link:first-child{
+    font-size: 13px;
+
+}
+.site-header-btn {
+    line-height: 20px;
+    text-decoration: none;
+    color:var(--background-color-body);
+    padding: 9px 20px 13px;
+    background-color:var(--text-color);
+    border-radius: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+.site-header-btn:hover{
+    background-color: rgb(255, 255, 255,0.8);
+}
+.site-header-btn:active{
+    background-color: rgb(255, 255, 255,0.6);
+}
+
+/* APERTURE STUDIOS STYLES */
+.aperture-studios {
+    height: 716px;
+    background-image: url(../images/aperture-studios-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 71px;
+}
+.aperture-studios-container{
+    display: flex;
+    flex-direction: column;
+}
+.text-wrapper {
+    width: 581px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 460px;
+
+}
+.text-wrapper-heading-three {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color:#c0c0c0;
+    margin-bottom: 1px;
+    
+}
+.text-wrapper-title {
+    font-size: 54px;
+    line-height: 59.4px;
+    margin-bottom: 18px;
+}
+.text-wrapper-text {
+    font-size: 14px;
+    line-height: 20px;
+    color:#f0f0f0;
+    margin-bottom:13px;
+}
+.aperture-studios-list {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+.aperture-studios-list-item{
+    display: flex;
+    align-items:center;
+}
+.aperture-studios-list-item:not(:last-child) {
+    margin-right: 16px;
+}
+.aperture-studios-list-item:last-child{
+    margin-right: 40px;
+}
+.aperture-studios-item-img {
+    display: block;
+    margin-right: 6px;
+}
+.aperture-studios-item-text {
+    font-size: 12px;
+    line-height: 12px;
+    color:var(--text-color)
+}
+
+/* SPECIALIZED  STYLES*/
+.specialized {
+    padding-top: 112px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.specialized-title {
+    font-size: 40px;
+    line-height: 42px;
+    color:var(--text-color);
+    margin-bottom: 15px;
+}
+.specialized-text {
+    font-size: 23px;
+    line-height: 30px;
+    color:#c0c0c0;
+    margin-bottom: 42px;
+}
+.specialized-list {
+    display: flex;
+    list-style: none;
+    padding-left: 116px;
+    padding-right: 116px;
+}
+.specialized-list:not(:last-child){
+    margin-bottom: 16px;
+}
+.specialized-list-item {
+    width: 576px;
+    padding: 421px 61px 30px 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+.specialized-item-one{
+    margin-right: 16px;
+    background-image:url(../images/Product-Photography.png);   
+    background-repeat:no-repeat;
+    background-size:cover; 
+
+}
+.specialized-item-two{ 
+    background-image:url(../images/Architecture-Photography.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;    
+
+}
+.specialized-item-three{    
+    background-image:url(../images/Drone-Photography.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    margin-right: 16px;
+
+}
+.specialized-item-four{    
+    background-image:url(../images/Wildlife-Photography@2x.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+
+}
+.specialized-item-title {
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--text-color);
+    margin-bottom: 10px;
+}
+.specialized-item-text {
+    width: 514px;
+    font-size: 14px;
+    line-height: 20px;
+    color:#c0c0c0;
+    margin-bottom: 10px;
+}
+.specialized-item-footer {
+    display: flex;
+    width:183px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    background-color:var(--text-color);
+    border-radius: 14px;
+    align-items:center;
+    margin-top: auto;
+}
+.specialized-item-footer:hover{
+    cursor: pointer;
+}
+
+.special-item-footer-black {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color:#000;
+    border-radius:50%;
+    margin-right: 6px;
+}
+.specialized-item-footer-link {
+    text-decoration: none;
+    font-size: 15px;
+    line-height:20px;
+    color:var(--background-color-body);
+}
+
+
+/* MOUNT FUJI STYLES */
+.mount-fuji {
+    background-image:url(../images/fouji-mount.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 260px 0 40px;
+}
+.mount-fuji-container {
+    display: flex;
+    flex-direction: column;
+}
+.mount-fuji-text-wrapper {
+    width: 310px;
+    margin-left: auto;
+}
+.mount-fuji-title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color:var(--text-color);
+    margin-bottom: 5px;
+}
+.mount-fuji-text {
+    font-size: 14px;
+    line-height: 20px;
+    color:#c0c0c0;
+    margin-bottom: 204px;
+}
+
+/* WOKR TOOLS STYLES */
+.work-tools {
+    margin-left: auto;
+    margin-right: auto;
+}
+.work-tools-container{
+    display: flex;
+}
+.wokr-tools-list {
+    display: flex;
+    list-style: none;
+    
+}
+.wokr-tools-list-item {
+    padding-left: 80px;
+    padding-bottom: 153px;
+    width: 720px;
+}
+.wokrs-tools-right-box{
+    width: 720px;
+   padding: 483px 45px 40px 415px;
+    background-image:url(../images/woks-tools.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-left:78px;
+}
+.wokr-tools-item-title-one {
+    margin-top: 173px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color:#c0c0c0;
+    margin-bottom: 6px;
+}
+.wokr-tools-item-title {
+    font-size: 28px;
+    line-height: 32px;
+    color:var(--text-color);
+    margin-bottom: 14px;
+}
+.wokr-tools-item-text {
+    width: 514px;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--text-color);
+    margin-bottom: 29px;
+}
+/* MONSTERA LEAFS STYLES */
+.monstera-leafs {
+    padding-top: 360px;
+    padding-bottom: 40px;
+    background-image:url(../images/monstera-leafs.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+}
+.monstera-leafs-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.monstera-leafs-text-wrapper {
+    margin-left: auto;
+}
+.monstera-leafs-wrapper-title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color:#fff;
+    margin-bottom: 5px;
+}
+.monstera-leafs-wrapper-text {
+    width: 273px;
+    font-size: 14px;
+    line-height: 20px;
+    color:#c0c0c0;
+    margin-bottom: 204px;
+}
+/* LOGOTIP STYLES */
+.logotip {
+    padding-top: 113px;
+    padding-bottom: 169px;
+}
+.logotip-title {
+    font-size: 40px;
+    line-height: 42px;
+    color:#c0c0c0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.logotip-text {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color:#c0c0c0;
+    margin-bottom: 82px;
+}
+.logotip-list {
+    width: 1000px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logtip-list-item {
+    list-style: none;
+}
+.logotip-item-link {
+    text-decoration: none;
+}
+.logotip-item-img {
+    width: 128px;
+    display: block;
+}
+
+
+/* HIMALAYAN STAR STYLES */
+.himalayan-star{
+    height: 600px;
+    background-image:url(../images/himolay.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding-bottom: 40px;
+    padding-top: 250px;
+}
+
+
+/* SERVICES STYLES */
+.services{
+    padding: 113px 435px  108px;
+    text-align: center;
+}
+.services-title {
+    width: 571px;
+    font-size: 40px;
+    line-height: 42px;
+    color:var(--text-color);
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-text {
+    font-size: 24px;
+    line-height: 30px;
+    color:#c0c0c0;
+    margin-bottom: 22px;
+}
+.services-footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FOOTER STYLES */
+.footer {
+    padding: 92px 238px 104px 136px;
+    display: flex;
+
+}
+.footer-top {
+    display: flex;
+    padding-bottom: 36px;
+}
+.footer-hr{
+    width: 100%;
+   
+    height: 2px;
+    background-color:#fff;
+}
+.footer-top-left {
+    margin-right: auto;
+}
+.footer-top-left-logo-link {
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-top-left-text {
+    font-size: 13px;
+    line-height: 20px;
+    color:#c0c0c0;
+}
+.footer-top-list {
+    list-style: none;
+
+
+}
+.footer-top-list{
+    margin-right: 55px;
+}
+.footer-top-list-item {
+    margin-bottom: 10px;
+}
+.footer-top-list-item-title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color:#c0c0c0;
+    text-transform: uppercase;
+}
+.footer-list-item-link {
+    font-size: 14px;
+    line-height: 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+.footer-news {
+    padding: 36px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.footer-news-text-wrapper-title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    colro:#fff;
+    margin-bottom: 20px;
+}
+.footer-news-text-wrapper-text {
+    font-size: 13px;
+    line-height: 20px;
+    color:#c0c0c0;
+}
+.box {
+    background-color:#fff;
+    padding: 11px 6px 11px 389px;
+    border-radius: 12px;
+}
+.span {
+    width: 63px;
+    height: 30px;
+    background-color:#000;
+    border-radius:11px;
+    display: block;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0 68px;
+}
+.footer-bottom-text {
+    line-height: 20px;
+    color:#c0c0c0;
+}
+.footer-bottom-list {
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+.footer-bottom-list-item:not(:last-child) {
+    margin-right: 25px;
+}
+.footer-bottom-item-link {
+}
+.footer-bottom-item-img {
+}
+
+
+
+
+
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .aperture-studios {
+        background-image: url(../images/aperture-studios-bg@2x.jpg);
+    }
+    .specialized-item-one{
+        background-image:url(../images/Product-Photography@2x.jpg); 
+    }
+    .specialized-item-two{ 
+        background-image:url(../images/Architecture-Photography.jpg);
+    }
+    .specialized-item-three{    
+        background-image:url(../images/Drone-Photography.jpg);
+    }
+    .specialized-item-four{    
+        background-image:url(../images/Wildlife-Photography@2x.jpg);
+    }
+    .mount-fuji {
+        background-image:url(../images/fuji-mount@2x.jpg);
+    }
+    .monstera-leafs {
+      
+        background-image:url(../images/monstera-leafs@2x.jpg);
+    }
+}
