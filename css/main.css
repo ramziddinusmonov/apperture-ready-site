@@ -96,7 +96,12 @@ img {
     line-height: 20px;
     color:var(--text-color);
     text-decoration: none;
-
+}
+.site-header-nav-item-link:hover{
+    opacity: 0.8;
+}
+.site-header-nav-item-link:active{
+    opacity: 0.6;
 }
 .site-header-nav-item-link:first-child{
     font-size: 13px;
@@ -575,8 +580,15 @@ img {
     margin-right: 25px;
 }
 .footer-bottom-item-link {
+    display: block;
+    text-decoration: none;
 }
 .footer-bottom-item-img {
+    display: block;
+}
+
+.footer-bottom-item-img:hover{
+    transform: scale(1.1);
 }
 
 
